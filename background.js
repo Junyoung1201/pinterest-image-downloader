@@ -14,7 +14,7 @@ chrome.action.onClicked.addListener(tab => {
             }
 
             function getFileName() {
-                const el = document.querySelector('div[data-test-id="pinTitle"] h1');
+                const el = document.querySelector('div[data-test-id="CloseupDetails"] h1');
                 return el && el.textContent ? el.textContent.trim() : '제목없음';
             }
 
