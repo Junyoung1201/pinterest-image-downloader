@@ -13,7 +13,7 @@ chrome.action.onClicked.addListener(tab => {
                 return i > -1 ? str.slice(i) : '';
             }
 
-            function getFileName(str) {
+            function getFileName() {
                 const el = document.querySelector('div[data-test-id="pinTitle"] h1');
                 return el && el.textContent ? el.textContent.trim() : '제목없음';
             }
@@ -59,9 +59,7 @@ chrome.action.onClicked.addListener(tab => {
             }
 
             async function process() {
-                const img = document.querySelector('img');
-
-                alert("test4");
+                const img = document.querySelector('div[data-test-id="pin-closeup-image"] img');
 
                 if (!img) {
                     alert('이미지를 찾을 수 없습니다.');
