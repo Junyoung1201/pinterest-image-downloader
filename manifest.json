@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Pinterest Image Downloader",
+    "version": "1.0",
+    "description": "핀터레스트 이미지를 다운로드합니다.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_title": "이미지 다운로드"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
